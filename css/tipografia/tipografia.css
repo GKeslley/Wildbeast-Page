@@ -1,0 +1,22 @@
+.titulo {
+  font: 600 3.2rem/1 "Vollkorn", Helvetica, sans-serif;
+}
+
+.italico {
+  font: 400 0.85rem/1.75 "Vollkorn", Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.paragrafos {
+  font: 400 1.2rem/1.5 "Vollkorn", Helvetica, sans-serif;
+  letter-spacing: -0.005em;
+}
+
+.paragrafos-p {
+  font: 400 1.1rem/1.5 "Vollkorn", Helvetica, sans-serif;
+  letter-spacing: -0.005em;
+}
+
+.numeros {
+  font: 700 2.8rem/1 "Vollkorn", Helvetica, sans-serif;
+}
