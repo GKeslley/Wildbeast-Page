@@ -1,0 +1,54 @@
+@media (max-width: 1200px) {
+  .introducao {
+    grid-template-columns: auto 1fr;
+    gap: 0px 30px;
+  }
+  .anuncio {
+    display: flex;
+    grid-row: 5;
+    grid-column: 2/ 3;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .anuncio img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 820px) {
+  .header {
+    grid-template-columns: 1fr;
+    justify-items: left;
+  }
+  .header img {
+    max-width: 200px;
+    padding-bottom: 30px;
+  }
+
+  .icones {
+    overflow-x: auto;
+  }
+  .introducao-animais {
+    display: flex;
+    grid-area: introducao-animais;
+  }
+  .introducao-animais li {
+    min-width: 140px;
+  }
+
+  .sobre-bg {
+    grid-area: sobre;
+  }
+
+  .anuncio {
+    display: flex;
+    grid-area: anuncio;
+  }
+
+  .introducao {
+    grid-template-areas:
+      "introducao-animais"
+      "sobre"
+      "anuncio";
+  }
+}

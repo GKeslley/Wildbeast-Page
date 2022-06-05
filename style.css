@@ -6,6 +6,10 @@
 
 /* Introdução */
 @import "./css/introducao/introducao.css";
+@import "./css/introducao/responsivo.css";
+
+/* Footer */
+@import "./css/footer/footer.css";
 
 /* Utilitarios */
 @import "./css/utilitarios/componentes.css";

@@ -1,8 +1,11 @@
+.estrutura {
+  display: grid;
+}
+
 .introducao {
   display: grid;
   grid-template-columns: auto 3fr 200px;
   gap: 30px;
-  padding-bottom: 60px;
 }
 
 .introducao-animais a {
@@ -14,16 +17,22 @@
   box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 15%);
   margin: 30px;
   width: 130px;
+  transition: 0.1s ease-out;
+  border-radius: 4px;
+}
+
+.introducao-animais li:hover {
+  background-color: #af7bfb;
 }
 
 .sobre {
-  padding: 40px;
+  padding: 40px 0px;
 }
 
 .sobre-conteudo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   gap: 0px 30px;
 }
 

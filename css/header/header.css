@@ -24,6 +24,10 @@
   border-radius: 4px;
 }
 
+.header-sessao a:hover {
+  background-color: #8844ee;
+}
+
 .header img {
   width: 60%;
 }
