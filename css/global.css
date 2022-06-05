@@ -11,7 +11,10 @@ p,
 ul,
 li,
 span,
-img {
+img,
+a,
+nav,
+blockquote {
   margin: 0px;
   padding: 0px;
 }
@@ -19,6 +22,7 @@ img {
 img {
   max-width: 100%;
   display: block;
+  border-radius: 4px;
 }
 
 a {

@@ -12,9 +12,19 @@
   letter-spacing: -0.005em;
 }
 
+.paragrafos-L {
+  font: 400 1.5rem/1.5 "Vollkorn", Helvetica, sans-serif;
+  letter-spacing: -0.005em;
+  font-style: italic;
+}
+
 .paragrafos-p {
   font: 400 1.1rem/1.5 "Vollkorn", Helvetica, sans-serif;
   letter-spacing: -0.005em;
+}
+
+.lista {
+  font: 400 1.12rem/1.5 "Courier Prime", Helvetica, sans-serif;
 }
 
 .numeros {
