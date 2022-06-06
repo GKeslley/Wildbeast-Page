@@ -8,11 +8,11 @@
   gap: 30px;
 }
 
-.introducao-animais a {
+.icones-links a {
   padding: 20px;
 }
 
-.introducao-animais li {
+.icones-links li {
   display: grid;
   box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 15%);
   margin: 30px;
@@ -21,7 +21,7 @@
   border-radius: 4px;
 }
 
-.introducao-animais li:hover {
+.icones-links li:hover {
   background-color: #af7bfb;
 }
 
@@ -41,12 +41,13 @@ span {
   color: #b07dfb;
 }
 
-.sobre-extras {
+.caracteristicas {
   display: grid;
   grid-template-columns: 100px 100px;
+  align-items: flex-start;
 }
 
-.sobre-extras div {
+.caracteristicas div {
   box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 15%);
   width: 70px;
   align-items: center;
@@ -99,7 +100,7 @@ span {
   width: 100%;
 }
 
-.anuncio img {
+.propaganda img {
   margin-top: 30px;
 }
 

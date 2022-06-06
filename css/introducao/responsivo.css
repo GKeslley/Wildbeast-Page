@@ -3,14 +3,16 @@
     grid-template-columns: auto 1fr;
     gap: 0px 30px;
   }
-  .anuncio {
+
+  .propaganda {
     display: flex;
     grid-row: 5;
-    grid-column: 2/ 3;
+    grid-column: 2 / 3;
     gap: 20px;
     padding-bottom: 20px;
   }
-  .anuncio img {
+
+  .propaganda img {
     width: 50%;
   }
 }
@@ -20,6 +22,7 @@
     grid-template-columns: 1fr;
     justify-items: left;
   }
+
   .header img {
     max-width: 200px;
     padding-bottom: 30px;
@@ -27,28 +30,109 @@
 
   .icones {
     overflow-x: auto;
+    position: relative;
   }
-  .introducao-animais {
+
+  .icones::after {
+    content: "→";
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+
+  .icones-links {
     display: flex;
-    grid-area: introducao-animais;
+    grid-area: icones-links;
   }
-  .introducao-animais li {
-    min-width: 140px;
+
+  .icones-links li {
+    min-width: 110px;
+    margin: 30px 10px;
   }
 
   .sobre-bg {
     grid-area: sobre;
   }
 
-  .anuncio {
-    display: flex;
-    grid-area: anuncio;
+  .propaganda {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-area: propaganda;
+  }
+
+  .propaganda img {
+    width: 100%;
   }
 
   .introducao {
     grid-template-areas:
-      "introducao-animais"
+      "icones-links"
       "sobre"
-      "anuncio";
+      "propaganda";
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-conteudo {
+    grid-template-columns: 1fr;
+    gap: 20px 0px;
+  }
+
+  .sobre-lobos {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .imagem-1 {
+    grid-row: 2;
+    grid-column: span 2;
+    padding-bottom: 30px;
+  }
+
+  .imagem-2 {
+    grid-row: 4;
+    grid-column: span 2;
+    padding-bottom: 30px;
+  }
+
+  .sobre-lobos span {
+    grid-row: 3;
+    grid-column: span 2;
+    padding-bottom: 30px;
+  }
+
+  .sobre-lobos h2 {
+    grid-column: span 2;
+  }
+
+  .sobre-lobos p {
+    grid-column: 1 / 1;
+    padding-bottom: 20px;
+  }
+
+  .infos {
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  #conteudo .container {
+    padding: 0px;
+    margin-left: 10px;
+  }
+  .infos {
+    padding: 0px;
+    word-break: break-all;
+  }
+
+  .citacao {
+    padding: 10px;
+  }
+
+  .citacao h2 {
+    font-size: 1.2rem;
   }
 }

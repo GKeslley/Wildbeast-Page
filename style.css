@@ -13,6 +13,4 @@
 
 /* Utilitarios */
 @import "./css/utilitarios/componentes.css";
-
-/* Tipografia */
-@import "./css/tipografia/tipografia.css";
+@import "./css/utilitarios/tipografia.css";
