@@ -22,12 +22,13 @@
   background: rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 4px;
+  transition: 0.1s;
 }
 
 .header-sessao a:hover {
   background-color: #8844ee;
 }
 
-.header img {
-  width: 60%;
+.logo {
+  width: 200px;
 }

@@ -14,7 +14,7 @@
 
 .icones-links li {
   display: grid;
-  box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 15%);
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
   margin: 30px;
   width: 130px;
   transition: 0.1s ease-out;
@@ -29,14 +29,14 @@
   padding: 40px 0px;
 }
 
-.sobre-conteudo {
+.sobre-titulo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 1fr;
   padding-bottom: 40px;
-  gap: 0px 30px;
+  gap: 0px 60px;
 }
 
-.sobre-conteudo h1,
+.sobre-titulo h1,
 span {
   color: #b07dfb;
 }
@@ -47,19 +47,19 @@ span {
   align-items: flex-start;
 }
 
-.caracteristicas div {
+.caracteristicas > div {
   box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 15%);
   width: 70px;
   align-items: center;
+  border-radius: 4px;
 }
 
 .numero {
   background: linear-gradient(135deg, #8844ee, #b07dfb);
   text-align: center;
-  padding: 3px;
   border-radius: 4px 4px 0px 0px;
   color: #b07dfb;
-  padding: 10px 0px;
+  padding: 10px;
 }
 
 .tipo {
@@ -121,8 +121,9 @@ span {
 .infos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding-bottom: 50px;
+  gap: 30px;
+  padding-bottom: 40px;
+  align-items: flex-end;
 }
 
 .infos ul {

@@ -1,19 +1,15 @@
 @media (max-width: 1200px) {
   .introducao {
     grid-template-columns: auto 1fr;
-    gap: 0px 30px;
+    gap: 0px;
   }
 
   .propaganda {
-    display: flex;
-    grid-row: 5;
-    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column: 2 / -1;
     gap: 20px;
     padding-bottom: 20px;
-  }
-
-  .propaganda img {
-    width: 50%;
   }
 }
 
@@ -21,15 +17,37 @@
   .header {
     grid-template-columns: 1fr;
     justify-items: left;
+    font-size: 1rem;
   }
 
-  .header img {
-    max-width: 200px;
-    padding-bottom: 30px;
+  .header ul {
+    font-size: 1rem;
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  #conteudo.container {
+    padding: 0px;
+  }
+
+  .sobre {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .introducao {
+    grid-template-areas:
+      "icones-links"
+      "sobre"
+      "propaganda";
   }
 
   .icones {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     position: relative;
   }
 
@@ -42,46 +60,49 @@
     animation: seta 0.5s ease-in 0s infinite alternate;
   }
 
+  @keyframes seta {
+    from {
+      right: 30px;
+    }
+    to {
+      right: 20px;
+    }
+  }
+
   .icones-links {
     display: flex;
     grid-area: icones-links;
+    padding: 0px 10px;
   }
 
   .icones-links li {
-    min-width: 110px;
+    min-width: 100px;
     margin: 30px 10px;
   }
 
-  .sobre-bg {
+  .sobre {
     grid-area: sobre;
   }
 
   .propaganda {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
     grid-area: propaganda;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .propaganda img {
     width: 100%;
   }
-
-  .introducao {
-    grid-template-areas:
-      "icones-links"
-      "sobre"
-      "propaganda";
-  }
 }
 
 @media (max-width: 600px) {
-  .sobre-conteudo {
+  .sobre-titulo {
     grid-template-columns: 1fr;
     gap: 20px 0px;
   }
 
   .sobre-lobos {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     gap: 0px;
   }
 
@@ -109,7 +130,10 @@
 
   .sobre-lobos p {
     grid-column: 1 / 1;
-    padding-bottom: 20px;
+  }
+
+  .sobre-lobos p + p {
+    margin-top: 20px;
   }
 
   .infos {
@@ -119,10 +143,6 @@
 }
 
 @media (max-width: 400px) {
-  #conteudo .container {
-    padding: 0px;
-    margin-left: 10px;
-  }
   .infos {
     padding: 0px;
     word-break: break-all;
@@ -134,5 +154,9 @@
 
   .citacao h2 {
     font-size: 1.2rem;
+  }
+
+  .propaganda {
+    gap: 5px;
   }
 }
